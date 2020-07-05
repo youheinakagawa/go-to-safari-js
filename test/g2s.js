@@ -1,6 +1,6 @@
 import assert from 'assert';
-var g2s = require('../src/index').g2s;
-var g2sCheckTarget = require('../src/index').g2sCheckTarget;
+import {g2s, g2sCheckTarget} from '../src/g2s';
+
 
 const testSamples = [
   {

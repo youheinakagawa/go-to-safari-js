@@ -2,7 +2,7 @@
   "name": "go-to-safari",
   "version": "1.0.1",
   "description": "Launch safari from webview. Almost absolutely.",
-  "main": "index.js",
+  "main": "g2s.js",
   "scripts": {
     "build": "babel ./src -d ./lib",
     "lint": "eslint ./src",

@@ -26,9 +26,22 @@ function checkTarget(ua) {
   return true;
 }
 
-//export const g2sCheckTarget = ua => checkTarget(ua);
-//export default g2s;
-module.exports = {
-  g2s: g2s,
-  g2sCheckTarget: checkTarget
-};
+// check js environment
+if (typeof(exports) !== 'undefined') {
+  // nodejs env
+  if (typeof module !== 'undefined' && module.exports) {
+      exports = module.exports = g2s;
+  }
+  exports.g2s = g2s;
+  exports.g2sCheckTarget = checkTarget;
+} else {
+  // requirejs env (optional)
+  if (typeof(define) === 'function' && define.amd) {
+      define(function () {
+          return g2s;
+      });
+  } else if (window) {
+      // browser env
+      window.g2s = g2s;
+  }
+}

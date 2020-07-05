@@ -1,2 +1,2 @@
-# go-to-safari-js
+# go-to-safari
 Launch safari from webview. Almost absolutely.
