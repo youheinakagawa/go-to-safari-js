@@ -1,6 +1,6 @@
 {
   "name": "go-to-safari",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Launch safari from webview. Almost absolutely.",
   "main": "g2s.js",
   "scripts": {
