@@ -1,0 +1,4 @@
+# leave everything else untouched
+.idea/
+.vscode/
+lib/
