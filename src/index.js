@@ -28,3 +28,4 @@ function checkTarget(ua) {
 
 export const g2sCheckTarget = ua => checkTarget(ua);
 export default g2s;
+module.exports = g2s;
