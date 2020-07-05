@@ -6,10 +6,8 @@
   "scripts": {
     "build": "babel ./src -d ./lib",
     "lint": "eslint ./src",
-    "test": "nyc ./node_modules/.bin/ava -v",
-    "prepublishOnly": "npm run build",
-    "report-coverage": "nyc report --reporter=lcov > coverage.lcov && codecov",
-    "standard": "standard index.js"
+    "test": "nyc mocha --require babel-core/register",
+    "prepublishOnly": "npm run build"
   },
   "nyc": {
     "reporter": [
@@ -39,16 +37,6 @@
     "babel-preset-env": "^1.7.0",
     "eslint": "^7.4.0",
     "mocha": "^8.0.1",
-    "nyc": "^10.0.0",
-    "ava": "^0.16.0",
-    "co-exec": "^1.0",
-    "codecov": "^1.0.1",
-    "ghooks": "^1.2.4",
-    "standard": "^8.4.0"
-  },
-  "config": {
-    "ghooks": {
-      "pre-commit": "npm run standard"
-    }
+    "nyc": "^15.1.0"
   }
 }
