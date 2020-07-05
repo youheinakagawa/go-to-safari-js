@@ -1,0 +1,26 @@
+{
+  "name": "go-to-safari",
+  "version": "1.0.0",
+  "description": "Launch safari from webview. Almost absolutely.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/youheinakagawa/go-to-safari-js.git"
+  },
+  "keywords": [
+    "npm",
+    "node",
+    "javascript",
+    "safari",
+    "webview"
+  ],
+  "author": "Youhei Nakagawa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/youheinakagawa/go-to-safari-js/issues"
+  },
+  "homepage": "https://github.com/youheinakagawa/go-to-safari-js#readme"
+}
